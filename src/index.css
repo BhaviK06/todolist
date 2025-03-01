@@ -2,15 +2,18 @@
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
   font-weight: 400;
+
   color-scheme: light dark;
-  color: #5e4b56;
-  background-color: #FAF9F6;
+  color: #5e4b56; /* Soft plum for text */
+  background-color: #FAF9F6; /* Pearl white */
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* 🎨 Soft Watercolor Wash Background with CSS Gradients */
 body {
   margin: 0;
   display: flex;
@@ -19,30 +22,34 @@ body {
   justify-content: center;
   min-height: 100vh;
   padding: 20px;
-  background-color: #ffeef5;
-  background-image: url('https://www.transparenttextures.com/patterns/watercolor-texture.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+
+  background: linear-gradient(135deg, rgba(255, 223, 227, 0.8), rgba(230, 230, 250, 0.8), rgba(255, 240, 245, 0.8));
+  background-size: 300% 300%;
+  background-position: center;
+  color: #5e4b56;
 }
 
+/* Links */
 a {
   font-weight: 500;
-  color: #C08497;
+  color: #C08497; /* Muted rose */
   text-decoration: none;
   transition: color 0.3s ease;
 }
-
 a:hover {
-  color: #A76D82;
+  color: #A76D82; /* Slightly deeper rose */
 }
 
+/* Header */
 h1 {
   font-size: 2.8em;
-  color: #5e4b56;
+  color: #5e4b56; /* Deep plum */
   text-align: center;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 
+/* Buttons */
 button {
   border-radius: 8px;
   border: none;
@@ -50,7 +57,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: rgba(200, 162, 126, 0.8);
+  background-color: rgba(200, 162, 126, 0.8); /* Champagne Gold with slight transparency */
   color: white;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -58,7 +65,7 @@ button {
 }
 
 button:hover {
-  background-color: rgba(175, 139, 110, 0.9);
+  background-color: rgba(175, 139, 110, 0.9); /* Slightly deeper gold */
 }
 
 button:focus,
@@ -66,12 +73,13 @@ button:focus-visible {
   outline: 4px auto rgba(200, 162, 126, 0.6);
 }
 
+/* Aesthetic Table */
 table {
   width: 90%;
   max-width: 800px;
   border-collapse: collapse;
   margin-top: 20px;
-  background-color: rgba(250, 249, 246, 0.95);
+  background-color: rgba(250, 249, 246, 0.95); /* Soft transparent pearl white */
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
@@ -79,28 +87,29 @@ table {
 
 table th,
 table td {
-  border: 1px solid #D8A7B1;
+  border: 1px solid #D8A7B1; /* Muted rose border */
   padding: 12px;
   text-align: left;
   font-size: 1em;
 }
 
 table th {
-  background-color: #C08497;
+  background-color: #C08497; /* Muted rose */
   color: white;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 table tr:nth-child(even) {
-  background-color: rgba(243, 230, 249, 0.8);
+  background-color: rgba(243, 230, 249, 0.8); /* Soft lilac */
 }
 
 table tr:hover {
-  background-color: rgba(229, 207, 225, 0.9);
+  background-color: rgba(229, 207, 225, 0.9); /* Light lavender */
   transition: 0.3s ease-in-out;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
   body {
     padding: 10px;
